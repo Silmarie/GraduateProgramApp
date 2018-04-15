@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.EventsFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_banner_height"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/iv_main_banner" />
+
+    <TextView
+        android:id="@+id/tv_events_open_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/tv_open_day_18"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:text="Open Day '18" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_events_open_day"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/events_list_height"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_events_open_day" />
+
+    <TextView
+        android:id="@+id/tv_events_graduate_program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/tv_graduate_program"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_events_open_day"
+        tools:text="Graduate Program" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_events_graduate_program"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/events_list_height"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_events_graduate_program" />
+
+    <TextView
+        android:id="@+id/tv_events_meet_mindera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/tv_meet_mindera"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_events_graduate_program"
+        tools:text="Meet Mindera" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_events_meet_mindera"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/events_list_height"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_events_meet_mindera" />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
