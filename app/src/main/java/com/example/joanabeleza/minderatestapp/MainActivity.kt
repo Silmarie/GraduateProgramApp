@@ -8,7 +8,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import com.example.joanabeleza.minderatestapp.Adapters.PagerAdapter
+import com.example.joanabeleza.minderatestapp.adapters.PagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -60,30 +60,30 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.right_menu, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
+        return when (item.itemId) {
+            R.id.action_search_events -> true
+            R.id.action_search_jobs -> true
+            else -> super.onOptionsItemSelected(item)
         }
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_home -> {
                 // Handle the camera action
             }
-            R.id.nav_gallery -> {
+            R.id.nav_events -> {
 
             }
-            R.id.nav_slideshow -> {
+            R.id.nav_jobs -> {
 
             }
-            R.id.nav_manage -> {
+            R.id.nav_contact_us -> {
 
             }
         }

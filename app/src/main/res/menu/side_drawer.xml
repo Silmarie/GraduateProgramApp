@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/tv_nav_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_events"
             android:icon="@drawable/ic_event_black_24dp"
             android:title="@string/tv_nav_events" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_jobs"
             android:icon="@drawable/ic_work_black_24dp"
             android:title="@string/tv_nav_jobs" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_contact_us"
             android:icon="@drawable/ic_contact_mail_black_24dp"
             android:title="@string/tv_nav_contact_us" />
     </group>

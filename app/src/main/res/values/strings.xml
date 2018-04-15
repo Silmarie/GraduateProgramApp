@@ -6,11 +6,12 @@
     <string name="nav_header_title">Mindera Stories</string>
     <string name="nav_header_subtitle">Catch up with the non easter egg</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_search_events_lbl">Search Events</string>
+    <string name="action_search_jobs_lbl">Search Jobs</string>
     <string name="tv_vacancies">Vacancies</string>
     <string name="tv_open_day_18">Open Day \'18</string>
     <string name="tv_graduate_program">Graduate Program</string>
-    <string name="tv_meet_mindera">Meet Mindera</string>
+    <string name="tv_meet_mindera">Meet Mindera Code &amp; Culture</string>
     <string name="iv_main_banner">Main Banner</string>
     <string name="iv_event_detail_description">Event Detail Description</string>
     <string name="iv_event_image_description">Event Image Description</string>

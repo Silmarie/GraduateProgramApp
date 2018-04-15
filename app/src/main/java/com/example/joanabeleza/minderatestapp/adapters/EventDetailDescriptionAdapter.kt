@@ -1,4 +1,4 @@
-package com.example.joanabeleza.minderatestapp.Adapters
+package com.example.joanabeleza.minderatestapp.adapters
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -26,6 +26,6 @@ class EventDetailDescriptionAdapter(private val eventDetailDescriptions: Array<S
     }
 
     class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
-        val item = v.findViewById<TextView>(R.id.tv_event_detail_description_list_item)
+        val item: TextView = v.findViewById(R.id.tv_event_detail_description_list_item)
     }
 }

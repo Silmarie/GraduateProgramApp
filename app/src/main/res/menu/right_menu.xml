@@ -2,8 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_search_events"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_search_events_lbl"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search_jobs"
+        android:orderInCategory="100"
+        android:title="@string/action_search_jobs_lbl"
         app:showAsAction="never" />
 </menu>

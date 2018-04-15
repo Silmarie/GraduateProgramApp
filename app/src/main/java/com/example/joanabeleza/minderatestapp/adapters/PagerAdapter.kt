@@ -1,10 +1,10 @@
-package com.example.joanabeleza.minderatestapp.Adapters
+package com.example.joanabeleza.minderatestapp.adapters
 
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
-import com.example.joanabeleza.minderatestapp.Fragments.EventsFragment
-import com.example.joanabeleza.minderatestapp.Fragments.VacanciesFragment
+import com.example.joanabeleza.minderatestapp.fragments.EventsFragment
+import com.example.joanabeleza.minderatestapp.fragments.VacanciesFragment
 
 /**
  * Project MinderaTestApp refactored by joanabeleza on 11/04/2018.

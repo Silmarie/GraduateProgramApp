@@ -1,4 +1,4 @@
-package com.example.joanabeleza.minderatestapp.Adapters
+package com.example.joanabeleza.minderatestapp.adapters
 
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.example.joanabeleza.minderatestapp.EventDetailActivity
 import com.example.joanabeleza.minderatestapp.R
-import com.example.joanabeleza.minderatestapp.R.layout.event_list_item
 
 /**
  * Project MinderaTestApp refactored by joanabeleza on 12/04/2018.
@@ -29,7 +28,7 @@ class EventsAdapter(private val events: Array<String>) : RecyclerView.Adapter<Ev
     }
 
     class ViewHolder(v: View) : RecyclerView.ViewHolder(v), View.OnClickListener {
-        val day = v.findViewById<TextView>(R.id.tv_event_list_item_day_label)
+        val day: TextView = v.findViewById(R.id.tv_event_list_item_day_label)
 
         init {
             v.setOnClickListener(this)

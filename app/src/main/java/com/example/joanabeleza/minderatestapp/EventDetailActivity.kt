@@ -1,12 +1,11 @@
 package com.example.joanabeleza.minderatestapp
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import com.example.joanabeleza.minderatestapp.Adapters.EventDetailsAdapter
-import com.example.joanabeleza.minderatestapp.Adapters.EventsAdapter.ViewHolder.Companion.EVENT_KEY
+import com.example.joanabeleza.minderatestapp.adapters.EventDetailsAdapter
+import com.example.joanabeleza.minderatestapp.adapters.EventsAdapter.ViewHolder.Companion.EVENT_KEY
 import kotlinx.android.synthetic.main.activity_main.*
 
 class EventDetailActivity : AppCompatActivity() {
